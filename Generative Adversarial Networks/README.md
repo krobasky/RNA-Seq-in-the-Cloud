@@ -9,10 +9,14 @@ install `python >= 3.5`
 ```
 pip install numpy pandas sklearn keras tensorflow-gpu matplotlib pillow argparse
 ```
+You may need to use pip3 above to avoiding installing the above libraries to the python2.x stack. For example:
+```
+ pip3 install numpy pandas sklearn keras tensorflow-gpu matplotlib pillow argparse
+```
 
 ## Data collection and pre-processing
 
-1. create query to pull down all available read counts information; 
+1. create query to pull down all available read counts information (>20GB); 
 
 ```
 gsutil cat gs://ncbi_sra_rnaseq/genecounts/*.genecounts > compiled_genecounts.csv
